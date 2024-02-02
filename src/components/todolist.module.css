@@ -121,7 +121,7 @@
 @media (width<920px) {
     .container>.todoadd{
         width: 100%;
-        height: 70vh;
+        height: 55vh;
     }
     .container>.todoadd>.inputdiv>input{
         height: 40px;
