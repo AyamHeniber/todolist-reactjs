@@ -5,6 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
 }
@@ -23,13 +25,14 @@
 
 }
 .container>.todoadd>.inputdiv>input{
-    height: 12%;
+    height: 10%;
     width: 80%;
     border-radius: 10px;
     color: black;
     border: none;
     box-shadow: 0px 0px 10px rgb(7, 57, 90);
     margin-top: 10%;
+    padding-left: 10px;
 }
 .container>.todoadd>.inputdiv>input:hover{
     outline: none;
@@ -51,10 +54,11 @@
 .container>.todoadd>.inputdiv>.radiobtn>input{
     height: 15px;
     width: 15px;
+    
 }
 .container>.todoadd>.inputdiv>.addbtn{
     margin-top: 5%;
-    height: 10%;
+    height: 9%;
     width: 80%;
     background-color: rgb(173, 171, 171);
     color: black;
@@ -65,14 +69,14 @@
 
 .container>.tododisplay{
     height: auto;
-    width: 68%;
+    width: 70%;
     border-radius: 5px;
     background-color: black;
 }
 
 .container>.tododisplay>div{
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 350px;
     background-color: rgb(255, 121, 3);
     margin: 20px;
     border-radius: 10px;
@@ -106,4 +110,17 @@
     border: 2px solid black;
     box-shadow: 0px 0px 4px black;
     /* margin-left: 10%; */
+}
+
+@media (width<920px) {
+    .container>.todoadd{
+        width: 100%;
+        height: 60%;
+    }
+    .container>.todoadd>.inputdiv>input{
+        height: 40px;
+    }
+    .container>.todoadd>.inputdiv>.addbtn{
+        height: 40px;
+    }
 }
