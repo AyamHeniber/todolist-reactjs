@@ -69,14 +69,14 @@
 
 .container>.tododisplay{
     height: auto;
-    width: 70%;
+    width: 60%;
     border-radius: 5px;
     background-color: black;
 }
 
 .container>.tododisplay>div{
     height: 300px;
-    width: 350px;
+    width: 300px;
     background-color: rgb(255, 121, 3);
     margin: 20px;
     border-radius: 10px;
@@ -90,7 +90,13 @@
     /* border:2px solid white; */
     border-radius: 10px;
     line-height: 30px;
+    overflow-y: auto;
+    
 }
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
 .container>.tododisplay>div>.tododisplaybtn{
     height: 14%;
     width: 100%;
@@ -115,7 +121,7 @@
 @media (width<920px) {
     .container>.todoadd{
         width: 100%;
-        height: 60%;
+        height: 100%;
     }
     .container>.todoadd>.inputdiv>input{
         height: 40px;
